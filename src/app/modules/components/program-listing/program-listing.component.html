@@ -1,0 +1,23 @@
+<div class="container cm  ">
+  <div>
+    <div class="row mb-2">
+      <div class="col-3 colStyle " *ngFor="let data of services">
+        <div class="flip-card ">
+          <div class="flip-card-inner card">
+            <div class="flip-card-front">
+              <img src="{{data.img}}" alt="Avatar" width="400" height="200">
+              <div class="card-body">
+                <h5 class="card-title">{{data.title}}</h5>
+                <b> Mission ids: </b>
+                <ul class="renderData">
+                  <li> {{data.missionIds}}</li>
+                </ul>
+                <b>Launch Year: </b> <span class="renderData">{{data.launchYear }} </span> <br>
+                <b> Successful Launch: </b> <span class="renderData"> {{data.successfulLaunch}}</span>
+                <b> Successful Landing: </b> <span class="renderData">{{data.successLanding}} </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

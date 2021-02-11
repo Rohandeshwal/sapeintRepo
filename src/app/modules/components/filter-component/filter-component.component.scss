@@ -1,0 +1,43 @@
+.filter-container{
+ 
+width: 100%;
+background-color:white;
+min-height: calc(100vh - 82px); 
+
+
+}
+.ft-fluid{
+    padding: 10px 10px;
+    height: 100vh;
+   
+}
+.filtertext{
+    font-size: 18px;
+}
+
+.launch{
+    border-bottom: 2px solid #cccccc;
+    text-align: center;
+    align-items: center;
+    color: grey; 
+    font-size: 16px;
+    font-weight: bold;
+}
+.buttonCondition{
+    border-radius: 5px;
+    border: none;
+    width: 7vw;
+    height: 35px;
+    color: black;
+    font-weight: 500;
+    background-color: #47bf62db !important;
+}
+
+.buttonCondition:hover{
+    color:black;
+    background:green !important;
+}
+.buttonCondition:active{
+    color:black;
+    background:green !important;
+}
