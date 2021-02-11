@@ -1,20 +1,20 @@
 <div class="container ">
   <div>
     <div class="row mb-2">
-      <div class="col-3 colStyle " *ngFor="let data of services">
-        <div class="flip-card ">
+      <div class=" col-xl-4  col-lg-3 col-md-6 col-sm-12 mb-4  " *ngFor="let data of spaceData">
+        <div class="flip-card colStyle  ">
           <div class="flip-card-inner card">
             <div class="flip-card-front">
-              <img src="{{data.img}}" alt="Avatar" width="400" height="200">
+              <img src="{{data.links.mission_patch_small}}"  alt="mission patch img not available on api" width="400" height="200">
               <div class="card-body">
-                <h5 class="card-title">{{data.title}}</h5>
+                <h5 class="card-title">{{data.mission_name}} # {{data.flight_number}}</h5>
                 <b> Mission ids: </b>
                 <ul class="renderData">
-                  <li> {{data.missionIds}}</li>
+                  <li> {{data.mission_id}}</li>
                 </ul>
-                <b>Launch Year: </b> <span class="renderData">{{data.launchYear }} </span> <br>
-                <b> Successful Launch: </b> <span class="renderData"> {{data.successfulLaunch}}</span>
-                <b> Successful Landing: </b> <span class="renderData">{{data.successLanding}} </span>
+                <b>Launch Year: </b> <span class="renderData">{{data.launch_year }} </span> <br>
+                <b> Successful Launch: </b> <span class="renderData"> {{data.launch_success}}</span> <br>
+                <b> Successful Landing: </b> <span class="renderData">{{data. land_success ? "true" : "false" }} </span>
               </div>
             </div>
           </div>

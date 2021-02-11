@@ -6,9 +6,15 @@ body{
     box-sizing: border-box;
     background: #e3ecfd !important;
     margin: 0 !important;
-    overflow: hidden;
+    overflow-x: hidden  ;
 }
+// .scroll-body{
+//     height: calc(100vh - 20px);
+//     overflow: auto;
+// }
+
+@media (max-width: 767px){
 .scroll-body{
-    height: calc(100vh - 20px);
-    overflow: auto;
+height: auto;
+}
 }

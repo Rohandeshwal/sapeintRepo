@@ -26,7 +26,7 @@ min-height: calc(100vh - 82px);
 .buttonCondition{
     border-radius: 5px;
     border: none;
-    width: 7vw;
+  margin-right: 5px ;
     height: 35px;
     color: black;
     font-weight: 500;
@@ -40,4 +40,14 @@ min-height: calc(100vh - 82px);
 .buttonCondition:active{
     color:black;
     background:green !important;
+}
+
+@media (max-width: 767px){
+    .ft-fluid{
+        height: auto;
+        padding: 30px 20px;
+    }
+    .filter-container{
+        min-height:auto ;
+    }
 }
