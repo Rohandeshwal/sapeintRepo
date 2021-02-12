@@ -9,6 +9,7 @@ import { ProgramListingComponent } from './modules/components/program-listing/pr
 import { LaunchProgramsComponent } from './modules/pages/launch-programs/launch-programs.component';
 import { SharedModule } from './shared/shared.module';
 import {NgHttpLoaderModule} from "ng-http-loader"
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgHttpLoaderModule} from "ng-http-loader"
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,SharedModule,HttpClientModule,NgHttpLoaderModule.forRoot()
+    AppRoutingModule,SharedModule,HttpClientModule,NgHttpLoaderModule.forRoot(),FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
