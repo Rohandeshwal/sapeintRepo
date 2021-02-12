@@ -1,11 +1,10 @@
 <div class="container">
   
     <div class="row mb-2">
-      <div class=" col-xl-4  col-lg-3 col-md-6 col-sm-12 mb-4  " *ngFor="let data of spaceData">
+      <div class=" col-xl-3  col-lg-4 col-md-6 col-sm-12 mb-4  " *ngFor="let data of spaceData">
         <div class="flip-card colStyle  ">
           <div class="flip-card-inner card">
             <div class="flip-card-front">
-     
               <img src="{{data.links.mission_patch_small}}" class=" Rocket-mission-image" alt="mission patch img not available on api" width="400" height="200">
               <div class="card-body">
                 <h5 class="card-title">{{data.mission_name}} # {{data.flight_number}}</h5>

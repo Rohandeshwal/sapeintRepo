@@ -22,7 +22,7 @@ export class ProgramListingComponent implements OnInit {
     this.cloneData=[];
     this.spaceData=[];
     this.getSpaceData();
-
+// Filter for year 
     this.sharedService.shareDataState.subscribe(res=>{
       this.year= res;
         this.spaceData = this.cloneData.filter((element:any)=>{
@@ -30,6 +30,7 @@ export class ProgramListingComponent implements OnInit {
 
         })
     })
+    // filter for  lauch sucess
     this.sharedService.shareLaunchState.subscribe(res=>{
       this.success=res;
       this.spaceData = this.cloneData.filter((element:any)=>{
@@ -37,6 +38,8 @@ export class ProgramListingComponent implements OnInit {
       
       })
     })
+    // filter for  lanch sucess
+
     this.sharedService.shareLandState.subscribe(res=>{
       this.landing = res;
       this.spaceData = this.cloneData.filter((element:any)=>{
