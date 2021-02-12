@@ -1,4 +1,4 @@
-import { LaunchProgramsComponent } from './modules/pages/launch-programs/launch-programs.component';
+import { LaunchProgramsComponent } from './pages/launch-programs/launch-programs.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
