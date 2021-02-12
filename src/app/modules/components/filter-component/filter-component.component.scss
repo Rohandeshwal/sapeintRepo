@@ -7,16 +7,14 @@ min-height: calc(100vh - 82px);
 
 }
 .ft-fluid{
-    padding: 10px 10px;
-    height: 100vh;
-   
+    padding: 10px 10px;  
 }
 .filtertext{
     font-size: 18px;
 }
 
 .launch{
-    border-bottom: 2px solid #cccccc;
+   
     text-align: center;
     align-items: center;
     color: grey; 
@@ -51,3 +49,27 @@ min-height: calc(100vh - 82px);
         min-height:auto ;
     }
 }
+
+.App-filters-hr {
+    margin: 0.4rem;
+  }
+  
+.App-filter-button-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;}
+    .App-filter-button {
+        flex: 0 1 40%;
+        margin: 10px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .btn-outline-success:focus{
+        background:#28a745;
+        color: white;
+    }

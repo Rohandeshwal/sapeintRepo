@@ -11,21 +11,41 @@ import { Router } from '@angular/router';
 export class FilterComponentComponent implements OnInit {
   spaceData:any;
   years:number[];
+  // successfulLaunch:boolean;
 
-  @Input() receiveYearData: string;
+  
+  
+  shareDataState:any;
 
   constructor(private sharedService:SharedService,
     private route:Router,private shared:SharedService) {
       this.years=this.getYears();
-      this.receiveYearData =""
+    //  this.successfulLaunch = this.getSuccessfulLanch();/
+      
      }
   ngOnInit(): void {
-   console.log("aayga", this.years);
-  }
-  getData(){
-    
+    // this.sharedService.setData(true);
+   
   }
 
+  // Call year
+  getData(year:any){
+    this.sharedService.setData(year);
+    console.log("data")
+  }
+ 
+
+// call Launch
+getSuccessfulLaunch(event:boolean){
+  this.sharedService.shareSuccessLauch(event);
+  console.log("data");
+  
+}
+getSuccessfulLand(event:boolean){
+  this.sharedService.shareLandLauch(event);
+  console.log("data");
+
+}
   getYears()
   {
     // abstract method

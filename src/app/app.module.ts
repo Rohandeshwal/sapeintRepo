@@ -8,6 +8,7 @@ import { FilterComponentComponent } from './modules/components/filter-component/
 import { ProgramListingComponent } from './modules/components/program-listing/program-listing.component';
 import { LaunchProgramsComponent } from './modules/pages/launch-programs/launch-programs.component';
 import { SharedModule } from './shared/shared.module';
+import {NgHttpLoaderModule} from "ng-http-loader"
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,SharedModule,HttpClientModule
+    AppRoutingModule,SharedModule,HttpClientModule,NgHttpLoaderModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
