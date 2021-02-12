@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SharedService } from './spaceXdata';
+import { SharedService } from './spaceXdata.serice';
 
 describe('SharedService', () => {
   let service: SharedService;
